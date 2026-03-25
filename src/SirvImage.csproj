@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;net6.0;net8.0;net10.0</TargetFrameworks>
+    <RootNamespace>Sirv</RootNamespace>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+
+    <PackageId>Sirv.SirvImage</PackageId>
+    <Version>2.0.0</Version>
+    <Authors>Sirv</Authors>
+    <Company>Sirv</Company>
+    <Description>Official .NET SDK for the Sirv dynamic imaging API. This SDK provides a simple way to request any modified image (dimensions, format, quality, sharpen, crop, watermark etc.) using the 100+ image transformation options in Sirv's image optimization service.</Description>
+    <PackageTags>sirv;image;cdn;srcset;responsive;zoom;spin;360;gallery;3d;image-processing;image-optimization;image-transformation</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://sirv.github.io/sirv-image-dotnet/</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/sirv/sirv-image-dotnet</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="../README.md" Pack="true" PackagePath="/" />
+  </ItemGroup>
+
+</Project>

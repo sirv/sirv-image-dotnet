@@ -1,3 +1,6 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace Sirv;
@@ -256,7 +259,7 @@ public class SirvClient
     /// <returns>Full URL string.</returns>
     public string Url(string path, Dictionary<string, object>? parameters = null)
     {
-        var normalizedPath = path.StartsWith('/') ? path : "/" + path;
+        var normalizedPath = path.StartsWith("/") ? path : "/" + path;
         return $"https://{_domain}{normalizedPath}{BuildQuery(parameters)}";
     }
 
